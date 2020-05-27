@@ -1,0 +1,62 @@
+[name] New design 1
+[puzzle] Sz005
+
+[traces] 
+......................
+......................
+......................
+......................
+......................
+........154...........
+........154...........
+.........9415C........
+....8..156...A........
+....A...955556...8....
+....3C..34.1555556....
+.....35554............
+......................
+......................
+
+[chip] 
+[type] UC4
+[x] 9
+[y] 2
+[code] 
+  tgt p0 19
++ add 100
+  tgt x0 100
++ add 100
+  tgt acc 199
++ mov 100 p1
+  slp 1
+
+[chip] 
+[type] RTC
+[x] 5
+[y] 5
+[is-puzzle-provided] true
+
+[chip] 
+[type] UC6
+[x] 10
+[y] 6
+[code] 
+  mov 0 x2
+  teq p0 x0
++ mov 100 x2
+  teq p0 x1
++ mov 0 x2
+  slp 1
+
+[chip] 
+[type] DIAL2
+[x] 7
+[y] 7
+[is-puzzle-provided] true
+
+[chip] 
+[type] DIAL1
+[x] 7
+[y] 8
+[is-puzzle-provided] true
+
